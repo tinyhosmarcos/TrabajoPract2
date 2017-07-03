@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <Button
+        android:id="@+id/update_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Cambiar Datos"
+        android:layout_alignBottom="@+id/delete_contact"
+        android:layout_toStartOf="@+id/button_enviar" />
+    <Button
+        android:id="@+id/delete_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Eliminar"
+        android:layout_toEndOf="@+id/update_contact" />
+
+    <EditText
+        android:id="@+id/text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su mensaje"
+        android:layout_below="@+id/update_contact"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/button_enviar"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_below="@+id/text_message"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/reload_boot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:layout_below="@+id/text_message"
+        android:layout_alignParentStart="true" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.yhostin.overtactics.Fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_enviar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/delete_message" />
+
+    <Button
+        android:id="@+id/delete_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Eliminar Mensajes" />
+
+
+</RelativeLayout>

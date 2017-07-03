@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yhostin.overtactics.DeleteMessages">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id del mensaje"
+        android:textSize="10pt"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:layout_above="@+id/id_delete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp" />
+    <EditText
+        android:id="@+id/id_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="64dp"
+        android:hint="Ingrese una id"
+        tools:layout_editor_absoluteX="133dp"
+        android:layout_above="@+id/delete_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="119dp" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="123dp"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="263dp"
+        android:layout_height="32dp"
+        android:text="Puede_comprobarla id de un mensaje haciendo click sobre el"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="463dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp" />
+</RelativeLayout>
